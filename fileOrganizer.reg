@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\photo_organizer]
+@="Organizar arquivos aqui"
+"Icon"="C:\\Program Files\\File Organizer\\fileOrganizer.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\photo_organizer\command]
+@="\"C:\\Program Files\\File Organizer\\fileOrganizer.exe\" \"%v.\""
