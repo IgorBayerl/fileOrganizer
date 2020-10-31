@@ -27,8 +27,6 @@ class FileOrganizer:
 
             folder_destination_path = self.extensions_folders[extension]
 
-            print(folder_destination_path)
-
             now = datetime.now()
             year = now.strftime("%Y")
 
@@ -48,7 +46,7 @@ class FileOrganizer:
             while file_exists:
                 i += 1
                 new_name = os.path.splitext(folderOperation + '/' + filename)[0] + str(i) + os.path.splitext(folderOperation + '/' + filename)[1]
-                new_name = new_name.split("/")
+                new_name = new_name.split("/")[1]
                 file_exists = os.path.isfile(folder_destination_path + "/" + new_name)
             src = folderOperation + "/" + filename
 
